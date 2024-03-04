@@ -1,6 +1,6 @@
 {
     "name": "spanner/benchmark",
-    "description": "Cloud Spanner Client for PHP",
+    "description": "Cloud Spanner ILB Benchmark",
     "license": "Apache-2.0",
     "require": {
         "php": "^8.0",
