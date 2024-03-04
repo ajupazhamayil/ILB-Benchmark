@@ -20,7 +20,7 @@ $sessionPool = new CacheSessionPool(
     $sessionCache,
     [
         'minSessions' => 50,
-        'maxSessions' => 50  // Here it will create 10 sessions under the cover.
+        'maxSessions' => 50
     ]
 );
 
@@ -80,7 +80,7 @@ function burstRead($instanceId, $databaseId, $tableName, $n, $sessionPool)
     // In seconds
     $totalTime = ($endTime - $starTime) * 1000;
     $fp = fopen('output.txt', 'ab');
-    fputcsv($fp, ['Burst Read Write', $totalTime]);
+    fputcsv($fp, ['Burst Read ', $totalTime]);
     fclose($fp);
 
     echo "$numOfChildrens child processes joined.\n";
