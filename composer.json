@@ -1,0 +1,10 @@
+{
+    "name": "spanner/benchmark",
+    "description": "Cloud Spanner Client for PHP",
+    "license": "Apache-2.0",
+    "require": {
+        "php": "^8.0",
+        "ext-grpc": "*",
+        "google/cloud-spanner": "1.74.0"
+    }
+}
